@@ -1,0 +1,1151 @@
+/* =====================================================
+   JARVIS 2.1
+   Bootstrap + CSS personalizado
+===================================================== */
+
+
+/* =========================
+   VARIÁVEIS
+========================= */
+
+:root {
+
+    --jarvis-blue: #38bdf8;
+    --jarvis-blue-dark: #0284c7;
+    --jarvis-blue-light: #7dd3fc;
+
+    --jarvis-bg: #020617;
+    --jarvis-bg-secondary: #0b1120;
+
+    --jarvis-border: #1e3a5f;
+
+    --jarvis-text: #e2e8f0;
+    --jarvis-muted: #94a3b8;
+
+}
+
+
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+
+body {
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(14, 165, 233, 0.08),
+            transparent 35%
+        ),
+        var(--jarvis-bg);
+
+    color: var(--jarvis-text);
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    line-height: 1.6;
+
+}
+
+
+a {
+    transition: 0.3s;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.jarvis-navbar {
+
+    background:
+        rgba(2, 6, 23, 0.82);
+
+    backdrop-filter:
+        blur(15px);
+
+    border-bottom:
+        1px solid
+        rgba(56, 189, 248, 0.2);
+
+    padding:
+        15px 0;
+
+}
+
+
+.jarvis-logo {
+
+    color: #f8fafc !important;
+
+    font-size: 28px;
+
+    font-weight: 800;
+
+    letter-spacing: 4px;
+
+}
+
+
+.jarvis-logo span {
+
+    color:
+        var(--jarvis-blue);
+
+}
+
+
+.jarvis-navbar .nav-link {
+
+    color:
+        #cbd5e1;
+
+    font-weight:
+        600;
+
+    margin-left:
+        15px;
+
+}
+
+
+.jarvis-navbar .nav-link:hover {
+
+    color:
+        var(--jarvis-blue);
+
+    text-shadow:
+        0 0 12px
+        rgba(56, 189, 248, 0.7);
+
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    min-height:
+        100vh;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(2, 6, 23, 0.96),
+            rgba(2, 6, 23, 0.68),
+            rgba(2, 6, 23, 0.9)
+        ),
+
+        url("Imagens/jarvis.png");
+
+    background-size:
+        cover;
+
+    background-position:
+        center;
+
+    background-attachment:
+        fixed;
+
+}
+
+
+.hero-title {
+
+    color:
+        #f8fafc;
+
+    font-size:
+        clamp(45px, 6vw, 78px);
+
+    font-weight:
+        800;
+
+    line-height:
+        1.05;
+
+    margin-bottom:
+        25px;
+
+}
+
+
+.hero-title span {
+
+    color:
+        var(--jarvis-blue);
+
+    display:
+        block;
+
+}
+
+
+.hero-description {
+
+    max-width:
+        620px;
+
+    color:
+        #cbd5e1;
+
+    font-size:
+        18px;
+
+    margin-bottom:
+        35px;
+
+}
+
+
+/* =========================
+   TEXTOS
+========================= */
+
+.section-tag {
+
+    color:
+        var(--jarvis-blue);
+
+    font-size:
+        13px;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        3px;
+
+    margin-bottom:
+        15px;
+
+}
+
+
+.section-title {
+
+    color:
+        #f8fafc;
+
+    font-size:
+        clamp(35px, 5vw, 55px);
+
+    font-weight:
+        800;
+
+    line-height:
+        1.1;
+
+}
+
+
+.section-title span {
+
+    color:
+        var(--jarvis-blue);
+
+}
+
+
+.section-description {
+
+    color:
+        var(--jarvis-muted);
+
+    font-size:
+        17px;
+
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.jarvis-section {
+
+    padding:
+        110px 0;
+
+}
+
+
+.technology-section {
+
+    padding:
+        110px 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            var(--jarvis-bg),
+            var(--jarvis-bg-secondary)
+        );
+
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.jarvis-card {
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15, 23, 42, 0.95),
+            rgba(2, 6, 23, 0.95)
+        );
+
+    border:
+        1px solid
+        var(--jarvis-border);
+
+    color:
+        var(--jarvis-text);
+
+    border-radius:
+        10px;
+
+    transition:
+        transform 0.3s,
+        border-color 0.3s,
+        box-shadow 0.3s;
+
+}
+
+
+.jarvis-card:hover {
+
+    transform:
+        translateY(-8px);
+
+    border-color:
+        var(--jarvis-blue);
+
+    box-shadow:
+        0 15px 45px
+        rgba(14, 165, 233, 0.12);
+
+}
+
+
+.jarvis-card .card-title {
+
+    color:
+        #f8fafc;
+
+}
+
+
+.jarvis-card .card-text {
+
+    color:
+        var(--jarvis-muted);
+
+}
+
+
+/* =========================
+   ÍCONES
+========================= */
+
+.icon-box {
+
+    width:
+        60px;
+
+    height:
+        60px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    margin-bottom:
+        20px;
+
+    border-radius:
+        10px;
+
+    border:
+        1px solid
+        var(--jarvis-blue);
+
+    background:
+        rgba(14, 165, 233, 0.08);
+
+    color:
+        var(--jarvis-blue);
+
+    font-size:
+        28px;
+
+    box-shadow:
+        0 0 20px
+        rgba(14, 165, 233, 0.08);
+
+}
+
+
+/* =========================
+   IMAGEM
+========================= */
+
+.jarvis-image {
+
+    width:
+        100%;
+
+    border:
+        1px solid
+        var(--jarvis-blue);
+
+    border-radius:
+        10px;
+
+    box-shadow:
+        0 0 60px
+        rgba(14, 165, 233, 0.15);
+
+}
+
+
+/* =========================
+   LISTA DE RECURSOS
+========================= */
+
+.jarvis-list {
+
+    margin:
+        30px 0;
+
+}
+
+
+.jarvis-list .list-group-item {
+
+    background:
+        transparent;
+
+    color:
+        #cbd5e1;
+
+    border-color:
+        #1e293b;
+
+    padding:
+        15px 0;
+
+}
+
+
+.jarvis-list strong {
+
+    color:
+        var(--jarvis-blue);
+
+    font-family:
+        monospace;
+
+    margin-right:
+        20px;
+
+}
+
+
+.jarvis-link {
+
+    color:
+        var(--jarvis-blue);
+
+    font-weight:
+        bold;
+
+    text-decoration:
+        none;
+
+}
+
+
+.jarvis-link:hover {
+
+    color:
+        white;
+
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+.jarvis-btn {
+
+    background:
+        var(--jarvis-blue-dark);
+
+    color:
+        white;
+
+    border:
+        1px solid
+        var(--jarvis-blue-dark);
+
+    padding:
+        13px 25px;
+
+    font-weight:
+        700;
+
+    transition:
+        0.3s;
+
+}
+
+
+.jarvis-btn:hover {
+
+    background:
+        #0ea5e9;
+
+    border-color:
+        #0ea5e9;
+
+    color:
+        white;
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 0 30px
+        rgba(14, 165, 233, 0.3);
+
+}
+
+
+.jarvis-btn-outline {
+
+    color:
+        var(--jarvis-blue);
+
+    border:
+        1px solid
+        var(--jarvis-blue);
+
+    background:
+        transparent;
+
+    padding:
+        13px 25px;
+
+    font-weight:
+        700;
+
+}
+
+
+.jarvis-btn-outline:hover {
+
+    background:
+        var(--jarvis-blue);
+
+    color:
+        var(--jarvis-bg);
+
+    transform:
+        translateY(-3px);
+
+}
+
+
+/* =========================
+   COMO FUNCIONA
+========================= */
+
+.step-card {
+
+    height:
+        100%;
+
+    padding:
+        35px;
+
+    background:
+        var(--jarvis-bg-secondary);
+
+    border-left:
+        2px solid
+        var(--jarvis-blue);
+
+    transition:
+        0.3s;
+
+}
+
+
+.step-card:hover {
+
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        0 10px 35px
+        rgba(14, 165, 233, 0.1);
+
+}
+
+
+.step-card span {
+
+    color:
+        var(--jarvis-blue);
+
+    font-family:
+        monospace;
+
+    font-size:
+        20px;
+
+    font-weight:
+        bold;
+
+}
+
+
+.step-card h3 {
+
+    color:
+        white;
+
+    margin:
+        15px 0 10px;
+
+}
+
+
+.step-card p {
+
+    color:
+        var(--jarvis-muted);
+
+}
+
+
+/* =========================
+   PLANOS
+========================= */
+
+.plan-card {
+
+    position:
+        relative;
+
+    background:
+        var(--jarvis-bg-secondary);
+
+    color:
+        var(--jarvis-text);
+
+    border:
+        1px solid
+        #1e293b;
+
+    border-radius:
+        10px;
+
+}
+
+
+.plan-card:hover {
+
+    border-color:
+        var(--jarvis-blue);
+
+}
+
+
+.featured-plan {
+
+    border-color:
+        var(--jarvis-blue);
+
+    box-shadow:
+        0 0 40px
+        rgba(14, 165, 233, 0.12);
+
+}
+
+
+.popular-badge {
+
+    position:
+        absolute;
+
+    top:
+        0;
+
+    left:
+        50%;
+
+    transform:
+        translate(-50%, -50%);
+
+    background:
+        var(--jarvis-blue-dark);
+
+    color:
+        white;
+
+    padding:
+        6px 15px;
+
+    border-radius:
+        20px;
+
+    font-size:
+        11px;
+
+    font-weight:
+        bold;
+
+    white-space:
+        nowrap;
+
+}
+
+
+.plan-name {
+
+    color:
+        var(--jarvis-blue);
+
+    font-size:
+        13px;
+
+    letter-spacing:
+        2px;
+
+    font-weight:
+        bold;
+
+}
+
+
+.plan-price {
+
+    color:
+        white;
+
+    font-size:
+        40px;
+
+}
+
+
+.plan-price small {
+
+    color:
+        #64748b;
+
+    font-size:
+        15px;
+
+}
+
+
+.plan-card p {
+
+    color:
+        var(--jarvis-muted);
+
+}
+
+
+.plan-list {
+
+    margin:
+        30px 0;
+
+}
+
+
+.plan-list li {
+
+    padding:
+        8px 0;
+
+    color:
+        #cbd5e1;
+
+}
+
+
+.plan-list .disabled {
+
+    color:
+        #475569;
+
+}
+
+
+/* =========================
+   TABELA
+========================= */
+
+.jarvis-table {
+
+    color:
+        #cbd5e1;
+
+    border-color:
+        #1e293b;
+
+}
+
+
+.jarvis-table th,
+.jarvis-table td {
+
+    border-color:
+        #1e293b;
+
+    padding:
+        16px;
+
+    text-align:
+        center;
+
+}
+
+
+.jarvis-table thead th {
+
+    background:
+        #0369a1;
+
+    color:
+        white;
+
+}
+
+
+.jarvis-table tbody th {
+
+    text-align:
+        left;
+
+}
+
+
+.jarvis-table tbody tr:hover {
+
+    background:
+        rgba(14, 165, 233, 0.05);
+
+}
+
+
+.jarvis-table caption {
+
+    color:
+        #64748b;
+
+    padding:
+        15px;
+
+}
+
+
+/* =========================
+   FORMULÁRIO
+========================= */
+
+.contact-section {
+
+    padding:
+        110px 0;
+
+}
+
+
+.jarvis-form {
+
+    padding:
+        40px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #0f172a,
+            #020617
+        );
+
+    border:
+        1px solid
+        var(--jarvis-border);
+
+    border-radius:
+        10px;
+
+}
+
+
+.jarvis-form .form-label {
+
+    color:
+        #cbd5e1;
+
+    font-weight:
+        bold;
+
+}
+
+
+.jarvis-form .form-control,
+.jarvis-form .form-select {
+
+    background:
+        #020617;
+
+    border:
+        1px solid
+        #334155;
+
+    color:
+        white;
+
+}
+
+
+.jarvis-form .form-control:focus,
+.jarvis-form .form-select:focus {
+
+    background:
+        #020617;
+
+    color:
+        white;
+
+    border-color:
+        var(--jarvis-blue);
+
+    box-shadow:
+        0 0 15px
+        rgba(56, 189, 248, 0.1);
+
+}
+
+
+/* =========================
+   FIELDSET
+========================= */
+
+.jarvis-form fieldset {
+
+    border:
+        1px solid
+        #334155;
+
+    border-radius:
+        5px;
+
+    padding:
+        20px;
+
+}
+
+
+.jarvis-form legend {
+
+    width:
+        auto;
+
+    float:
+        none;
+
+    padding:
+        0 10px;
+
+    color:
+        var(--jarvis-blue);
+
+    font-size:
+        16px;
+
+    font-weight:
+        bold;
+
+}
+
+
+.jarvis-form .form-check-label {
+
+    color:
+        #cbd5e1;
+
+}
+
+
+.jarvis-form .form-check-input {
+
+    background-color:
+        #020617;
+
+    border-color:
+        #475569;
+
+}
+
+
+.jarvis-form .form-check-input:checked {
+
+    background-color:
+        var(--jarvis-blue-dark);
+
+    border-color:
+        var(--jarvis-blue);
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.jarvis-footer {
+
+    padding:
+        50px 0 20px;
+
+    background:
+        #01040c;
+
+    border-top:
+        1px solid
+        #1e293b;
+
+}
+
+
+.jarvis-footer p {
+
+    color:
+        #64748b;
+
+}
+
+
+.jarvis-footer a:not(.jarvis-logo) {
+
+    color:
+        #94a3b8;
+
+    text-decoration:
+        none;
+
+}
+
+
+.jarvis-footer a:not(.jarvis-logo):hover {
+
+    color:
+        var(--jarvis-blue);
+
+}
+
+
+.jarvis-footer hr {
+
+    border-color:
+        #1e293b;
+
+    margin:
+        35px 0 20px;
+
+}
+
+
+/* =========================
+   RESPONSIVIDADE EXTRA
+========================= */
+
+@media (max-width: 991px) {
+
+    .jarvis-navbar .nav-link {
+
+        margin-left:
+            0;
+
+        padding:
+            10px 0;
+
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .jarvis-section,
+    .technology-section,
+    .contact-section {
+
+        padding:
+            80px 0;
+
+    }
+
+
+    .hero-title {
+
+        font-size:
+            45px;
+
+    }
+
+
+    .hero {
+
+        background-attachment:
+            scroll;
+
+    }
+
+
+    .jarvis-form {
+
+        padding:
+            25px;
+
+    }
+
+
+    .jarvis-logo {
+
+        font-size:
+            24px;
+
+    }
+
+}

@@ -1,0 +1,260 @@
+/* ==========================================
+   ESTILOS GLOBAIS E IMAGEM DE FUNDO
+   ========================================== */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Imagem de fundo com um efeito escuro por cima para o texto aparecer bem */
+    background: linear-gradient(rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.85)), 
+                url('https://www.adrenaline.com.br/wp-content/uploads/2024/09/Darkest-dungeon-912x569.jpg');
+    background-size: cover;          /* Faz a imagem cobrir a tela inteira */
+    background-position: center;     /* Centraliza a imagem */
+    background-repeat: no-repeat;    /* Evita que a imagem fique se repetindo */
+    background-attachment: fixed;    /* Deixa a imagem fixa enquanto a página rola */
+
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+}
+
+/* ==========================================
+   2. CABEÇALHO E NAVEGAÇÃO
+   ========================================== */
+header {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 2px solid #333;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+header h2 {
+    color: #a00;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+nav {
+    background-color: #161616;
+    border-bottom: 1px solid #222;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #a00;
+}
+
+/* ==========================================
+   3. CONTEÚDO PRINCIPAL (LAYOUT)
+   ========================================== */
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+main section {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+main section h2 {
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+
+main section p {
+    color: #888;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+/* ==========================================
+   4. ESTILIZAÇÃO DO FORMULÁRIO (Lista de Espera)
+   ========================================== */
+.form-lista-espera {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form-lista-espera .campo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-lista-espera label {
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+.form-lista-espera input {
+    background-color: #222;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 0.75rem;
+    color: #fff;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    width: 100%;
+}
+
+
+.form-lista-espera input:focus {
+    outline: none;
+    border-color: #a00;
+}
+
+.form-lista-espera button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.form-lista-espera button[type="submit"] {
+    background-color: #800;
+    color: #fff;
+    margin-top: 0.5rem;
+}
+
+.form-lista-espera button[type="submit"]:hover {
+    background-color: #a00;
+}
+
+.form-lista-espera button[type="reset"] {
+    background-color: #262626;
+    color: #aaa;
+    border: 1px solid #444;
+}
+
+.form-lista-espera button[type="reset"]:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* ==========================================
+   5. ESTILIZAÇÃO DA TABELA (Edições)
+   ========================================== */
+.tabela-edicoes {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.95rem;
+    margin-top: 1rem;
+}
+
+.tabela-edicoes caption {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #a00;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.tabela-edicoes th,
+.tabela-edicoes td {
+    padding: 0.85rem 1rem;
+    border: 1px solid #333;
+}
+
+.tabela-edicoes thead th {
+    background-color: #222;
+    color: #fff;
+    font-weight: bold;
+}
+
+.tabela-edicoes tbody th {
+    background-color: #161616;
+    color: #ccc;
+    font-weight: normal;
+}
+
+.tabela-edicoes tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.tabela-edicoes .disponivel {
+    text-align: center;
+    color: #4bb543;
+}
+
+.tabela-edicoes .indisponivel {
+    text-align: center;
+    color: #666;
+}
+
+.tabela-edicoes .destaque {
+    background-color: rgba(136, 0, 0, 0.15);
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+.tabela-edicoes tfoot td {
+    background-color: #161616;
+    color: #888;
+    font-size: 0.85rem;
+    font-style: italic;
+    text-align: center;
+}
+
+/* ==========================================
+   6. RODAPÉ E RESPONSIVIDADE
+   ========================================== */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #121212;
+    color: #555;
+    font-size: 0.85rem;
+    border-top: 1px solid #222;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        gap: 1rem;
+    }
+
+    main section {
+        padding: 1.5rem;
+    }
+}
