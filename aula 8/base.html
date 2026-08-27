@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Loja de Tênis</title>
+
+  <!-- Bootstrap 5.3.8 via CDN -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#">StreetStep</a>
+
+      <button type="button">
+        Menu
+      </button>
+
+      <ul>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#tamanhos">Tamanhos</a></li>
+        <li><a href="#cadastro">Cadastro</a></li>
+        <li><a href="#duvidas">Dúvidas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="inicio">
+      <div>
+        <p>LANÇAMENTO</p>
+        <h1>Seu próximo passo começa aqui.</h1>
+        <p>
+          Tênis urbanos para quem quer conforto, estilo e personalidade.
+        </p>
+      </div>
+    </section>
+
+    <section id="produtos">
+      <h2>Produtos</h2>
+
+      <article>
+        <h3>StreetStep Urban</h3>
+        <p>Modelo leve para uso cotidiano.</p>
+        <p>R$ 299,90</p>
+
+        <button type="button">
+          Ver detalhes
+        </button>
+      </article>
+
+      <article>
+        <h3>StreetStep Run</h3>
+        <p>Conforto para acompanhar sua rotina.</p>
+        <p>R$ 349,90</p>
+
+        <button type="button">
+          Ver detalhes
+        </button>
+      </article>
+
+      <article>
+        <h3>StreetStep Pro</h3>
+        <p>Mais suporte para atividades intensas.</p>
+        <p>R$ 449,90</p>
+
+        <button type="button">
+          Ver detalhes
+        </button>
+      </article>
+    </section>
+
+    <!-- ALERT -->
+    <section>
+      <h2>Oferta</h2>
+      <div>
+        Frete grátis para compras acima de R$ 300,00.
+      </div>
+    </section>
+
+    <!-- TABLE -->
+    <section id="tamanhos">
+      <h2>Tabela de tamanhos</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Tamanho</th>
+            <th>Comprimento do pé</th>
+            <th>Disponibilidade</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>37</td>
+            <td>24,5 cm</td>
+            <td>Disponível</td>
+          </tr>
+          <tr>
+            <td>38</td>
+            <td>25,2 cm</td>
+            <td>Disponível</td>
+          </tr>
+          <tr>
+            <td>39</td>
+            <td>26,0 cm</td>
+            <td>Disponível</td>
+          </tr>
+          <tr>
+            <td>40</td>
+            <td>26,7 cm</td>
+            <td>Últimas unidades</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- FORM -->
+    <section id="cadastro">
+      <h2>Cadastre-se</h2>
+
+      <form>
+        <div>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome">
+        </div>
+
+        <div>
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com">
+        </div>
+
+        <div>
+          <label for="tamanho">Tamanho preferido</label>
+          <select id="tamanho" name="tamanho">
+            <option value="">Selecione</option>
+            <option value="37">37</option>
+            <option value="38">38</option>
+            <option value="39">39</option>
+            <option value="40">40</option>
+          </select>
+        </div>
+
+        <div>
+          <input type="checkbox" id="novidades" name="novidades">
+          <label for="novidades">Quero receber novidades.</label>
+        </div>
+
+        <button type="submit">
+          Cadastrar
+        </button>
+      </form>
+    </section>
+
+    <!-- ACCORDION -->
+    <section id="duvidas">
+      <h2>Dúvidas frequentes</h2>
+
+      <div>
+
+        <h3>
+          <button type="button">
+            Como escolher o tamanho?
+          </button>
+        </h3>
+
+        <div>
+          Consulte nossa tabela de medidas antes de finalizar a compra.
+        </div>
+
+        <h3>
+          <button type="button">
+            Qual é o prazo de entrega?
+          </button>
+        </h3>
+
+        <div>
+          O prazo depende da região e é apresentado no fechamento do pedido.
+        </div>
+
+        <h3>
+          <button type="button">
+            Posso trocar o produto?
+          </button>
+        </h3>
+
+        <div>
+          Consulte as condições de troca da loja antes de realizar o pedido.
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>StreetStep &copy; 2026</p>
+  </footer>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+</body>
+</html>
